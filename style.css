@@ -1,5 +1,10 @@
 body {
-    background-color:aqua;
+    background-color:#FA258E;
     font-family: Arial;
+}
 
+h1{
+    color:brown;
+    letter-spacing:2px;
+    text-decoration: underline;
 }
