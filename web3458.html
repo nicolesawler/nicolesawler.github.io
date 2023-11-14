@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 5px;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+
+    nav img {
+        max-width: 15px;
+    }
+
+
+    
+    .hero-banner {
+      height: 400px;
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-banner-black {
+      background-color: #000;
+      color: #fff;
+    }
+
+
+    .hero-banner img{
+        max-width:300px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin:5px auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero-banner {
+        height: 300px;
+      }
+    }
+
+    .hero-banner h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+      grid-template-rows: repeat(2, 200px);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .grid-container img{
+        max-width:200px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home"><img src="images/logo.png"></a>
+    <a href="#about">Mac</a>
+    <a href="#services">iPhone</a>
+    <a href="#contact">iPad</a>
+    <a href="#contact">TV</a>
+    <a href="#contact">Movies</a>
+  </nav>
+
+  <div class="hero-banner">
+    <h1>iPhone 11</h1>
+    <p>Shop Now ></p>
+    <img src="images/6.png" />
+  </div>
+
+  <div class="hero-banner hero-banner-black">
+    <h1>iPhone 11 Pro</h1>
+    <p>Shop Now ></p>
+    <img src="images/5.png" style="min-width:600px"/>
+  </div>
+
+
+  <div class="grid-container">
+    <div class="grid-item"><img src="images/1.png" /></div>
+    <div class="grid-item"><img src="images/2.png" /></div>
+    <div class="grid-item"><img src="images/3.png" /></div>
+    <div class="grid-item"><img src="images/4.png" /></div>
+  </div>
+
+</body>
+</html>
